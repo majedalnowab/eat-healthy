@@ -3,6 +3,9 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 /***TOP-PART***/
+.flexible-container{
+    display: flex;
+}
 h1{
     font-size: 50px;
     font-weight: 600;
@@ -14,7 +17,6 @@ h1{
     color:#575757;
 }
 section{
-    display: flex;
     margin-bottom: 50px;
 }
 .top-item{
@@ -39,20 +41,27 @@ section{
     border-radius: 50px;
 }
 /***TOP-PART***/
+/***MIDDEL-PART***/
 .middle-part{
     background-image: url(images/Frame\ 59.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    padding: 80px 0;
+    height: 100vh;
+    width: 100%;
 }
 h2{
     font-size: 40px;
 }
+#middle-image{
+    width: 40%;
+}
 .middle-item{
-    width: 50%;
+    width: 48%;
 }
 .middle-item img{
-    width: 40%;
-    margin-left: 120px;
+    width: 100%;
+    
 }
 .middle-item p{
     margin-bottom: 70px;
@@ -61,7 +70,16 @@ h2{
     text-decoration: none;
     color: white;
     font-weight: 600;
-    background-image: linear-gradient(#F037B6,#77513B);
+    background-image: linear-gradient(#F037B6,#E523AA);
     padding: 20px 40px;
     border-radius: 50px;
 }
+
+/***MIDDEL-PART***/
+
+/***BOX-PART***/
+.text-area{
+    text-align: center;
+}
+
+/***BOX-PART***/
