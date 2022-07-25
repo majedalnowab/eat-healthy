@@ -5,7 +5,9 @@ body{
 /***TOP-PART***/
 .flexible-container{
     display: flex;
+	justify-content:space-around;
 }
+
 h1{
     font-size: 50px;
     font-weight: 600;
@@ -43,34 +45,45 @@ section{
 /***TOP-PART***/
 /***MIDDEL-PART***/
 .middle-part{
-    background-image: url(images/Frame\ 59.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 80px 0;
-    height: 100vh;
-    width: 100%;
+    background: url(images/Frame\ 59.jpg) no-repeat bottom / 100% 100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    height:100vh;
+}
+.left-image {
+    height:100vh;
+    width:45%;
+    text-align:center;
+    display:flex;
+    align-items:end;
+    justify-content:center;
+}
+.img-width {
+    width:50%;
+}
+.right-content {
+    width:45%;
+}
+.right-content p {
+    line-height:1.5em;
+    font-size:18px;
+}
+.middle-button {
+    display:inline-block;
+    margin-top:50px;
+}
+.img-fluid {
+    width:100%;
 }
 h2{
     font-size: 40px;
-}
-#middle-image{
-    width: 40%;
-}
-.middle-item{
-    width: 48%;
-}
-.middle-item img{
-    width: 100%;
-    
-}
-.middle-item p{
-    margin-bottom: 70px;
 }
 .middle-button{
     text-decoration: none;
     color: white;
     font-weight: 600;
-    background-image: linear-gradient(#F037B6,#E523AA);
+    background-image: linear-gradient(to right,#EA2BAF, #F845BD);
     padding: 20px 40px;
     border-radius: 50px;
 }
